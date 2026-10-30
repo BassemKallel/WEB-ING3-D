@@ -4,6 +4,9 @@ import { AppService } from './app.service.js';
 import { UsersModule } from './users/users.module.js';
 @Module({
   imports: [UsersModule],
+import { ProductsModule } from './products/products.module.js';
+@Module({
+  imports: [ProductsModule],
   controllers: [AppController],
   providers: [AppService],
 })
